@@ -1,0 +1,152 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulir pendaftaran</title>
+</head>
+<body>
+
+<div class="main">
+   <div class="head">
+    <h2>Formulir Pendaftaran Relawan (Volunteer)</h2>
+    <p>isi formulir di bawah</p>
+  </div>
+  <h3>1. Informasi pribadi</h3>
+   <table>
+     <tr>
+       <th>Nama depan</th>
+       <td>:</td>
+       <td><input type="text" placeholder="Masukkan nama depan" required="submit"></td>
+     </tr>
+     <tr>
+       <th>Nama belakang</th>
+       <td>:</td>
+       <td><input type="text" placeholder="Masukkan nama belakang"></td>
+     </tr>
+     <tr>
+       <th>Tanggal lahir</th>
+       <td>:</td>
+       <td><input type="date" placeholder="Masukkan tanggal" value="2008-01-01"></td>
+     </tr>
+     <tr>
+       <th>Jenis kelamin</th>
+       <td>:</td>
+       <td><select>
+         <option value=" " selected disabled>Jenis kelamin</option>
+         <option>Laki-laki</option>
+         <option>Perempuan</option>
+         <option>Lainya</option>
+       </select></td>
+     </tr>
+     <tr>
+       <th>Alamat</th>
+       <td>:</td>
+       <td><input type="text" placeholder="Domisili saat ini"</td>
+     </tr> 
+      <tr>
+       <th>No telepon</th>
+       <td>:</td>
+       <td><input type="number" placeholder="Whatsapp atau telepon aktif"></td>
+     </tr>
+      <tr>
+       <th>Email</th>
+       <td>:</td>
+       <td><input type="email" placeholder="Masukkan email"></td>
+     </tr>
+   </table><br>
+   <h3>2. Informasi pendidikan & pekerjaan</h3>
+   <table>
+      <tr>
+       <th>Pendidikan terakhir</th>
+       <td>:</td>
+       <td><input list="sekolah-list" placeholder="Pendidikan">
+           <datalist id="sekolah-list">
+              <option>SMA/SMK/Sederajat</option>
+              <option>D1</option>
+              <option>D2</option>
+              <option>D3</option>
+              <option>S1</option>
+              <option>S2</option>
+              <option>S3</option>
+           </datalist>
+       </td>
+     </tr>
+     <tr>
+       <th>Pekerjaan saat ini</th>
+       <td>:</td>
+       <td><input list="pekerjaan-list" placeholder="Pekerjaan">
+           <datalist id="pekerjaan-list">
+             <option>Pelajar</option>
+             <option>Mahasiswa</option>
+             <option>Pekerja</option>
+             <option>Tidak bekerja</option>
+           </datalist>
+       </td>
+     </tr>
+     <tr>
+       <th>Keahlian & kopetensi</th>
+       <td>:</td>
+       <td><input type="text" placeholder="Keahlian"></td>
+     </tr> 
+      </table>
+      <h3>3. Pengalaman & motivasi</h3>
+    <table>
+      <tr>
+       <th>Pernah menjadi volunteer</th>
+       <td>:</td>
+       <td><input type="radio" name="ya/tidak">YA<input type="radio" name="ya/tidak">TIDAK
+         <br>
+         <input type="text" placeholder="Jika ya, sebutkan pengalaman">
+       </td>
+     </tr>
+     <tr>
+       <th>Motivasi bergabung</th>
+       <td>:</td>
+       <td><input type="text" placeholder="Motivasi"></td>
+     </tr>
+     <tr>
+       <th>Bidang yang diminati</th>
+       <td>:</td>
+       <td><input type="text" placeholder="Edukasi, sosial, kesehatan, lingkungan, dll"></td>
+     </tr> 
+   </table>
+   <h3>4. Ketersediaan waktu & lokasi</h3>
+   <table>
+     <tr>
+       <th>Bersedia volunteer di kota mana</th>
+       <td>:</td>
+       <td><input type="text" placeholder="Kota"></td>
+     </tr>
+     <tr>
+       <th>Waktu yang bisa disediakan</th>
+       <td>:</td>
+       <td><select>
+              <option value=" " selected disabled>Waktu</option>
+              <option>Weekend</option>
+              <option>Weekday</option>
+              <option>Full-time</option>
+              <option>Part-time</option>
+           </select>
+       </td>
+     </tr>
+   </table>
+   <h3>5. Persetujuan & upload dokumen</h3>
+   <table>
+     <tr>
+       <th>Upload cv atau surat motivasi</th>
+       <td>:</td>
+       <td><input type="file" placeholder="Drag/Masukkan file kesini" id="file" hidden=""><label for="file" class="file">Pilih file</label></td>
+     </tr>
+     <tr>
+       <th>Upload foto atau ktp (jika diperlukan)</th>
+       <td>:</td>
+       <td><input type="file" id="foto" placeholder="Masukkan foto" hidden=""><label for="foto" class="file">Pilih foto</label></td>
+     </tr>
+   </table><br>
+   <p class="input">Setuju dengan syarat dan ketentuan yang berlaku? <input type="checkbox"></p><br>
+   <button type="submit" class="submit">Kirim</button>
+</div>
+</body>
+</html>
